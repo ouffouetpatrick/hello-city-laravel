@@ -5,11 +5,6 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTP:X-Forwarded-Proto} =htpp [OR]
-    RewriteCond %{HTTP:X-Forwarded-Proto} =""
-    RewriteCond %{HTTP:X} #on
-    RewriteCond ^ https://%{HTTP_HOST}%{REQUEST_URL} [L,R=301]
-
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
