@@ -1,0 +1,1 @@
+web: heroku-php-apaches2 public/
