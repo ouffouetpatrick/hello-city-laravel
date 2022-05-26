@@ -1,4 +1,4 @@
-@extends('app') 
+@extends('layouts/app') 
 
 @section('content')
     <img src="{{ asset('styles/images/civ.jpg') }}" alt="Quebec Flag" class="mt-12 rounded shadow-md h-32">
