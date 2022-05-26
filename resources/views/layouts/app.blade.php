@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>{{ $title }}</title>
+        <title>{{ isset ($title) ? $title. ' | ' .config('app.name') : config('app.name') }}</title>
     </head>
     <body class="py-6 flex flex-col justify-between items-center min-h-screen">
 

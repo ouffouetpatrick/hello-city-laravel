@@ -1,4 +1,4 @@
-@extends('layouts/app', ['title' => 'About Us | '.config('app.name')]) 
+@extends('layouts/app', ['title' => 'About Us']) 
   
 @section('content') 
     <img src="{{ asset('styles/images/logo.jpg') }}" class="my-12 rounded-full shadow-md" alt="logo">
